@@ -62,11 +62,11 @@ def print_repo_info(repo):
 if __name__ == '__main__':
     # Check presence of arguments
     if len(sys.argv) < 2:
-        print 'usage: gitrep.py <directory>'
-        sys.exit(2)
-
-    # Get directory path from arguments
-    path = sys.argv[1]
+        # Use current directory path
+        path = os.curdir
+    else:
+        # Get directory path from arguments
+        path = sys.argv[1]
 
     # Check that the path is indeed a directory
     if not os.path.isdir(path):
