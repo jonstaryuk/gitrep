@@ -62,7 +62,7 @@ def print_repo_info(repo):
 if __name__ == '__main__':
     # Check presence of arguments
     if len(sys.argv) < 2:
-        print 'usage: aide.py <directory>'
+        print 'usage: gitrep.py <directory>'
         sys.exit(2)
 
     # Get directory path from arguments
